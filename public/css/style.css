@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: url("../assets/icons/cursor-slice.png") 8 8, auto;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+body {
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.logo-container img {
+  width: 15rem;
+  height: 15rem;
+  margin-block: -2rem;
+}
+nav ul {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  li a {
+    color: #3f3f3f;
+    text-decoration: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .landing-section {
+    width: 100%;
+    height: 80vh;
+    background-color: #f7f7f7;
+    display: flex;
+    padding-inline: 6rem 5rem;
+    padding-top: 5rem;
+    justify-content: space-around;
+    align-items: start;
+    .CTA-container {
+      h1 {
+        font-size: 5rem;
+        font-weight: bolder;
+      }
+      button {
+        margin-top: 1rem;
+        width: 12.8rem;
+        height: 4.5rem;
+        font-size: 1.8rem;
+        background-color: #d72638;
+        color: #f7f7f7;
+        font-weight: bold;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+      }
+    }
+    .pizza-image-container img {
+      width: 20rem;
+    }
+  }
+  .about_us-section {
+    margin-top: 2.4rem;
+    padding-inline: 6rem 5rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    p {
+      margin-left: 2rem;
+      margin-top: 0.8rem;
+      font-size: 1.2rem;
+      color: #3f3f3f;
+    }
+  }
+  .gallary-section {
+    background-color: #f7f7f7;
+    margin-top: 2.4rem;
+    padding-top: 2rem;
+    padding-inline: 6rem 5rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-block: 1rem;
+    }
+    .gallary-images-container img {
+      width: 30rem;
+      height: 20rem;
+      border-radius: 5px;
+      margin: 0.5rem;
+
+      &:hover {
+        border: #f4a261 2px solid;
+        transform: scale(1.1);
+        transition: all 0.25s ease;
+      }
+    }
+  }
+  .contact_us-section {
+    margin-top: 2.4rem;
+    padding-inline: 6rem 5rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    form {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      input {
+        height: 3rem;
+        width: 30rem;
+        border: #3f3f3f 2px solid;
+        border-radius: 5px;
+        padding-left: 1rem;
+        font-size: 1.2rem;
+      }
+      textarea {
+        width: 30rem;
+        border: #3f3f3f 2px solid;
+        border-radius: 5px;
+        padding-inline: 1rem;
+        padding-top: 0.5rem;
+        font-size: 1.2rem;
+        resize: none;
+      }
+      button {
+        margin-top: 0.2rem;
+        width: 30rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+        background-color: #d72638;
+        color: #f7f7f7;
+        font-weight: bold;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  color: #f7f7f7;
+
+  background-color: #d72638;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
